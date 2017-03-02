@@ -1,0 +1,37 @@
+<header id="header" class="dark">
+
+  <div id="header-wrap">
+
+    <div class="container clearfix">
+
+      <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+      <!-- Logo
+      ============================================= -->
+      <div id="logo">
+        <a href="/" class="standard-logo" data-dark-logo="/images/logo.svg"><img src="/images/logo.svg" alt="Canvas Logo"></a>
+        <a href="/" class="retina-logo" data-dark-logo="/images/logo.svg"><img src="/images/logo.svg" alt="Canvas Logo"></a>
+      </div><!-- #logo end -->
+
+      <!-- Primary Navigation
+      ============================================= -->
+      <nav id="primary-menu" class="sub-title">
+
+        <ul>
+          {% assign pages_sorted = site.pages | sort: "menu_order" %}
+          {% for my_page in pages_sorted %}
+            {% unless my_page.url contains 'page' or my_page.title == nil %}
+              {% unless my_page.menu_order == '' or my_page.menu_order == nil %}
+              <li class="{% if page.title == my_page.title %}current{% endif %}"><a href="{{ my_page.url | prepend: site.baseurl }}"><div>{% if my_page.title_aux != null  %}{{my_page.title_aux}} {% else %} {{ my_page.title }} {% endif %}</div> <span>{{ my_page.slogan }}</span></a></li>
+              {% endunless %}
+            {% endunless %}
+          {% endfor %}
+        </ul>
+
+      </nav><!-- #primary-menu end -->
+
+    </div>
+
+  </div>
+
+</header><!-- #header end -->

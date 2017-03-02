@@ -1,0 +1,27 @@
+---
+layout: default
+title: Galeria
+slogan: Entre em contato conosco
+header_img_path: ../images/parallax/8.jpg
+menu_order: 3
+---
+
+<section id="content">
+  <div class="content-wrap">
+
+    <div class="container clearfix">
+      <div class="fancy-title title-bottom-border">
+        <h1>Nome da <span>Coleção</span></h1>
+      </div>
+
+      <div class="col_full clearfix">
+        <div class="masonry-thumbs col-4" data-big="1" data-lightbox="gallery">
+          {% for g in site.data.gallery %}
+            <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1"></a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

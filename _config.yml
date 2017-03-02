@@ -1,0 +1,44 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://victorious-lime1.cloudvent.net" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Selects
+columns:
+  - 1 Column
+  - 2 Column
+  - 3 Column
+
+# Collections
+collections:
+  events:
+      output: true
+  projects:
+      output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _comments:
+        header_imgthumb_path: "500x280"
+        header_img_path: "Any size"
+        g_img_thumb_path: "400 x 300"
+        g_img_path: "Any size"
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/news/page:num/"
+
+
