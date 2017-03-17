@@ -1,4 +1,6 @@
 - g_img_path: /uploads/02.jpg
   g_img_thumb_path: ../images/portfolio/1/2.jpg
-- g_img_path:
+- g_img_path: /uploads/03.jpg
+  g_img_thumb_path:
+- g_img_path: /uploads/01.jpg
   g_img_thumb_path:
