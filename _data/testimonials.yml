@@ -1,4 +1,4 @@
 - name: Lena
   company: Lena Ateliê
-  img_path: /uploads/screen-shot-2017-03-02-at-22-30-46.png
+  img_path:
   description: 'Texto de recomendação aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
