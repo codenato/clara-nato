@@ -1,3 +1,5 @@
+- g_img_path: /uploads/22.jpg
+  g_img_thumb_path: /uploads/22.jpg
 - g_img_path: /uploads/02.jpg
   g_img_thumb_path: /uploads/02.jpg
 - g_img_path: /uploads/03.jpg
@@ -26,8 +28,6 @@
   g_img_thumb_path: /uploads/20.jpg
 - g_img_path: /uploads/21.jpg
   g_img_thumb_path: /uploads/21.jpg
-- g_img_path: /uploads/22.jpg
-  g_img_thumb_path: /uploads/22.jpg
 - g_img_path: /uploads/23.jpg
   g_img_thumb_path: /uploads/23.jpg
 - g_img_path: /uploads/25.jpg
