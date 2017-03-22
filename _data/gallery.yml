@@ -39,12 +39,12 @@
 - g_img_path: /uploads/04.jpg
   g_img_thumb_path: /uploads/04.jpg
 - g_img_path: /uploads/05.jpg
-  g_img_thumb_path:
+  g_img_thumb_path: /uploads/05.jpg
 - g_img_path: /uploads/06.jpg
-  g_img_thumb_path:
+  g_img_thumb_path: /uploads/06.jpg
 - g_img_path: /uploads/08.jpg
-  g_img_thumb_path:
+  g_img_thumb_path: /uploads/08.jpg
 - g_img_path: /uploads/19.jpg
-  g_img_thumb_path:
+  g_img_thumb_path: /uploads/19.jpg
 - g_img_path: /uploads/18.jpg
-  g_img_thumb_path:
+  g_img_thumb_path: /uploads/18.jpg
