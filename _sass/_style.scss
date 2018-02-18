@@ -10606,6 +10606,10 @@ label.error { display: none !important; }
 
 .gmap img { max-width: none !important; }
 
+.gmap_marker {
+  color: black;
+}
+
 .gm-style .gm-style-iw h3 span {
   font-size: inherit;
   font-family: inherit;
