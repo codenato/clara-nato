@@ -94,11 +94,18 @@
         {% if page.menu_order == 1 %}
           var clientes = [];
 
+          var html = '';
             {% for cliente in site.data.clientes %}
+              html = '<strong>{{cliente.nome}}</strong><br>'
+                + '{{cliente.telefone}}<br>'
+                + '{{cliente.email}}<br>'
+                + '{{cliente.endereco}}<br>';
+
                 clientes.push(
                         {
-                          address: '{{cliente.endereco}}' + ', ' + '{{cliente.numero}}' + ', ' + '{{cliente.estado}}',
-                          html: '{{cliente.nome}}',
+                          latitude: {{cliente.lat}},
+                          longitude: {{cliente.long}},
+                          html: html,
                           // popup: true
                         }
                 );
