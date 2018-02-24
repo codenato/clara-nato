@@ -85,14 +85,16 @@
       });
     </script>
 
-    {% if page.location or page.menu_order == 1 %}
+    {% if page.location or page.menu_order == 1 or page.menu_order == 5 %}
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBa56I09z5IEq6zv-o7PHW6lRt865wVjUA"></script>
       <script type="text/javascript" src="/js/jquery.gmap.js"></script>
 
 
       <script>
-        {% if page.menu_order == 1 %}
+        {% if page.menu_order == 1 or page.menu_order == 5 %}
           var clientes = [];
+
+          console.log('aqui!');
 
           var html = '';
             {% for cliente in site.data.clientes %}
@@ -412,7 +414,6 @@
         });
 
       </script>
-
     {% endif %}
 
     {% if page.start_at_date %}
