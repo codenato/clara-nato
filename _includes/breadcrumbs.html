@@ -21,7 +21,7 @@
 
     {% for pg in site.pages %}
       {% if pg.url == a %}
-        {% assign n_found = n_found | plus: 1 %}
+        {% assign n_found = n_found | plus: '1' %}
 
         {% if pg.url == page.url %}
           <li class="active">{{ pg.title }}</li>
