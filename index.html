@@ -103,9 +103,9 @@ _comments:
     </div>
 
     <div class="video-wrap">
-      <video poster="../images/videos/explore.jpg" preload="auto" loop autoplay muted>
-        <source src='../images/videos/explore.mp4' type='video/mp4' />
-        <source src='../images/videos/explore.webm' type='video/webm' />
+      <video poster="{{site.baseurl}}/images/videos/explore.jpg" preload="auto" loop autoplay muted>
+        <source src='{{site.baseurl}}/images/videos/explore.mp4' type='video/mp4' />
+        <source src='{{site.baseurl}}/images/videos/explore.webm' type='video/webm' />
       </video>
       <div class="video-overlay" style="background-color: rgba(0,0,0,0.1);"></div>
     </div>
@@ -120,7 +120,7 @@ _comments:
     <div class="col_full clearfix">
       <div class="masonry-thumbs col-4" data-big="1" data-lightbox="gallery">
         {% for g in site.data.gallery %}
-          <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
+          <a href="{{site.baseurl}}{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{site.baseurl}}{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
         {% endfor %}
       </div>
     </div>
@@ -148,7 +148,7 @@ _comments:
           <div class="oc-item">
             <div class="ipost clearfix">
               <div class="entry-image">
-                <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" /></a>
+                <a href="{{site.baseurl}}{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{site.baseurl}}{{ post.header_imgthumb_path }}" /></a>
               </div>
               <div class="entry-title">
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -182,7 +182,7 @@ _comments:
             {% for t in site.data.testimonials%}
               <div class="slide">
                 <div class="testi-image">
-                  <a href="#"><img src="{{ t.img_path }}" alt="Testimonials" /></a>
+                  <a href="#"><img src="{{site.baseurl}}{{ t.img_path }}" alt="Testimonials" /></a>
                 </div>
                 <div class="testi-content">
                   <p>{{ t.description }}</p>

@@ -20,7 +20,7 @@ menu_order:
         {% for post in paginator.posts %}
           <div class="entry clearfix">
             <div class="entry-image">
-              <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" ></a>
+              <a href="{{site.baseurl}}{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{site.baseurl}}{{ post.header_imgthumb_path }}" ></a>
             </div>
             <div class="entry-title">
               <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

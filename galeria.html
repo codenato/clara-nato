@@ -19,7 +19,7 @@ menu_order: 3
       <div class="col_full clearfix">
         <div class="masonry-thumbs col-4" data-big="1" data-lightbox="gallery">
           {% for g in site.data.gallery %}
-            <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
+            <a href="{{site.baseurl}}{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{site.baseurl}}{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
           {% endfor %}
         </div>
       </div>

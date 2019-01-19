@@ -19,7 +19,7 @@
               <div class="swiper-wrapper">
 
                 {% for s in page.slides %}
-                  <div class="swiper-slide {% if s.text_white == true %}dark{% endif %}" style="background-image: url('{{ s.img_path }}'); background-position: center top;">
+                  <div class="swiper-slide {% if s.text_white == true %}dark{% endif %}" style="background-image: url('{{site.baseurl}}{{s.img_path }}'); background-position: center top;">
                     <div class="container clearfix">
                       <div class="slider-caption {% if s.text_center == true %}slider-caption-center{% endif %}">
                         <h2 data-caption-animate="fadeInUp">{{ s.title }}</h2>
@@ -44,7 +44,7 @@
       </section>
 
       {% else %}
-        <section id="page-title" class="page-title-center page-title-dark page-title-parallax" style="background-image: url('{{page.header_img_path}}'); padding: 180px 0; background-position: 100% -56%; background-size: 100%;">
+        <section id="page-title" class="page-title-center page-title-dark page-title-parallax" style="background-image: url('{{site.baseurl}}{{page.header_img_path}}'); padding: 180px 0; background-position: 100% -56%; background-size: 100%;">
 
           <div class="container clearfix">
             <h1>{{ page.title }}</h1>
