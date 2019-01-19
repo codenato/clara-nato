@@ -72,12 +72,12 @@
 
      <!-- External JavaScripts
     ============================================= -->
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/plugins.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/jquery.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/plugins.js"></script>
 
     <!-- Footer Scripts
     ============================================= -->
-    <script type="text/javascript" src="/js/functions.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/functions.js"></script>
 
     <script>
       $(function() {
@@ -87,7 +87,7 @@
 
     {% if page.location or page.menu_order == 1 or page.menu_order == 5 %}
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBa56I09z5IEq6zv-o7PHW6lRt865wVjUA"></script>
-      <script type="text/javascript" src="/js/jquery.gmap.js"></script>
+      <script type="text/javascript" src="{{site.baseurl}}/js/jquery.gmap.js"></script>
 
 
       <script>
@@ -396,7 +396,7 @@
             {
               address: "{{ page.location }}",
               icon: {
-                image: "/images/icons/map-icon-red.png",
+                image: "{{site.baseurl}}/images/icons/map-icon-red.png",
                 iconsize: [32, 39],
                 iconanchor: [32,39]
               }
@@ -500,7 +500,7 @@
     {% endif %}
 
     {% if page.url contains 'hero'%}
-      <script type="text/javascript" src="/js/jquery.nivo.js"></script>
+      <script type="text/javascript" src="{{site.baseurl}}/js/jquery.nivo.js"></script>
       <script type="text/javascript">
         jQuery(document).ready( function($) {
           $('.nivoSlider').nivoSlider({
